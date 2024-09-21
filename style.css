@@ -1,0 +1,500 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kanit", sans-serif;
+}
+ul,
+nav {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  z-index: 999;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 100px 0;
+}
+
+header .logo-link {
+  width: 100px;
+}
+
+header nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+header nav li {
+  margin: 0 15px;
+  color: white;
+}
+header nav li:first-child {
+  margin-left: 0;
+}
+header nav li:last-child {
+  margin-right: 0;
+}
+section {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 110px 100px;
+}
+/* section p{
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 0 20px;
+} */
+header nav a {
+  position: relative;
+  text-decoration: none;
+}
+
+header nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000; /* Change this to the desired color of the underline */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+header nav a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.banner-area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+.banner-area .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  background-color: black;
+  z-index: 1;
+}
+
+.banner-area .titleImg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+/* .banner-area .banner-img:after{
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .8;
+} */
+.banner-area .logo {
+  margin: 15px;
+  font-size: 65px;
+  z-index: 999;
+  width: 300px;
+}
+.banner-area h2 {
+  margin-bottom: 40px;
+  font-size: 35px;
+  z-index: 999;
+  position: relative;
+  bottom: 100px;
+}
+.banner-area a.banner-btn {
+  padding: 15px 35px;
+  background: crimson;
+  border-radius: 50px;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 100px;
+}
+.about-area {
+  position: relative;
+  bottom: 100px;
+}
+
+.about-area p {
+  text-align: justify;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    padding: 30px;
+}
+.section-title {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-bottom: 5%;
+  font-size: 40px;
+  text-align: center;
+}
+
+
+
+.app-area p{
+  padding: 10px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.app-area .about-btn {
+  background-color: crimson;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  font-family: 'Righteous', cursive;
+}
+
+
+/*MAP*/
+.mapBg {
+  overflow: hidden;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.form-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, #3e6ccf, #4854ff);
+  padding: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  width: 40%;
+  visibility: hidden;
+}
+.form-wrapper form h2 {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+input[type="submit"] {
+  padding: 10px;
+  font-size: 16px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.place {
+  background-color: crimson;
+  color: white;
+  padding: 7px;
+  border-radius: 10px;
+  position: absolute;
+  margin-right: 12px;
+  right: 0;
+}
+
+
+
+/*Footer*/
+
+
+
+/*Responsive*/
+@media (max-width: 1000px) {
+  header {
+    padding: 20px 50px;
+  }
+  section {
+    padding: 100px 50px;
+  }
+  .about-left,
+  .about-right {
+    flex-basis: 100%;
+  }
+  .about-content li {
+    padding: 8px;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  header h2 {
+    margin-bottom: 15px;
+  }
+  header nav li {
+    margin: 0 7px;
+    padding: 10px;
+  }
+  section {
+    padding: 125px 30px;
+  }
+  .banner-area {
+    min-height: 600px;
+  }
+  .banner-area h1 {
+    font-size: 35px;
+  }
+  .banner-area h2 {
+    font-size: 20px;
+  }
+  .banner-area a.banner-btn {
+    padding: 15px 40px;
+  }
+  #map {
+    width: 100%;
+    height: 91vh;
+  }
+  #map {
+    width: 100%;
+  }
+  #search-form label {
+    font-size: 16px;
+  }
+  #search-form input {
+    font-size: 14px;
+  }
+}
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #1a88ff #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #1a88ff;
+    border-radius: 16px;
+    border: 3px none #ffffff;
+  }
+
+
+  .mapBg{
+    overflow: hidden;
+  }
+  .loading-wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(25, 40, 255);
+    
+  }
+  
+  .loading-logo {
+    width: 400px;
+    height: 400px;
+    background-image: url('Assets/A-arrow.png');
+    background-size: cover;
+    animation: helikopter 4s linear infinite;
+  }
+  @keyframes helikopter {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+    }
+  
+  .map {
+    height: 100vh;
+    width: 100%;
+    visibility: hidden;
+    
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  #map {
+    height: 100%;
+    width: 100%;
+    
+  }
+  .form-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to right ,#3e6ccf,#4854ff);
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+    width: 40%;
+    visibility: hidden;
+    
+  }
+  .form-wrapper form h2{
+      color: white;
+      text-align: center;
+      font-size: 16px;
+      padding-bottom: 20px;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+  }
+  input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    
+  }
+  .place{
+      background-color: crimson;
+      color: white;
+      padding: 7px;
+      border-radius: 10px;
+      position: absolute;
+      margin-right: 12px;
+      right:0;
+  }
+  
+  
+  
+  .btn{
+    padding: 10px;
+    font-size: 16px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  
+/* Footer */
+.footer{
+  background:#5967e3;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:rgb(255, 255, 255);
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:rgb(255, 255, 255);
+  transition:0.5s;
+  font-family: "Roboto", sans-serif;
+    font-size: 15px;
+  }
+  
+  .footer .row a:hover{
+  color:#000000;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
+
+  .gm-style-iw {
+    max-width: 200px;
+  }

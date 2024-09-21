@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>KAY - Online Bus Tracker</title>
+  <link rel="stylesheet" type="text/css" href="map.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+
+
+<body class="mapBg">
+  <div class="loading-wrapper">
+    <div class="loading-logo"></div>
+
+  </div>
+  <div class="map">
+    <div id="map"></div>
+  </div>
+
+  <div class="form-wrapper">
+    <form>
+      <div id="controls">
+        <input type="text" id="start" placeholder="Start location">
+        <input type="text" id="end" placeholder="End location">
+        <select id="places">
+          <option value="">Station</option>
+          <option value="1">20</option>
+          <option value="2">24</option>
+          <option value="3">25</option>
+        </select>
+        <button id="search" class="btn" onclick="event.preventDefault(); calculateAndDisplayRoute()">Chercher</button>
+        <button id="geolocation" class="btn" onclick="event.preventDefault(); getCurrentLocation()">Votre place actuelle</button>
+      </div>
+</body>
+
+<!--SCRIPTS-->
+<script src="Scripts/loading.js"></script>
+<script src="Scripts/map.js"></script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2mo7bULRCqUpA3DsA9QHBTJdq97mP1UE&libraries=places&callback=initMap"></script>
+
+
+</html>

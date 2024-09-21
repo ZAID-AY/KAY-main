@@ -1,0 +1,61 @@
+<DOCTYPE html>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <link href="Styles/contact.css" rel="stylesheet" />
+        <title>KAY - Contactez Nous</title>
+      </head>
+      <body>
+        
+        
+        <form class="form" id="my-form" action="https://formspree.io/mbjezjow" method="POST">
+            <h2>Contacez Nous</h2>
+            <p type="Nom Complet:"><input type="text" name="name" placeholder="Entrez votre nom ici..." required></input></p>
+            <p type="Email:"><input type="email" name="_replyto" placeholder="Entrez votre email.." required></input></p>
+            <p type="Message:"><input name="message" placeholder="Laissez ici votre message.." required></input></p>
+            <button type="submit" id="submit-button">Envoyer</button>
+            <div>
+              <span class="fa fa-phone"></span>0123456789
+              <span class="fa fa-envelope-o"></span> support.kay@gmail.com
+            </div>
+          </form>
+          
+
+
+      </body>
+
+      <script>
+        const form = document.getElementById('my-form');
+        const submitButton = document.getElementById('submit-button');
+      
+        form.addEventListener('submit', (event) => {
+          event.preventDefault();
+          submitButton.disabled = true;
+      
+          fetch(event.target.action, {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json'
+            },
+            body: new FormData(event.target)
+          })
+          .then(response => response.json())
+          .then(data => {
+            alert('Thank you for your message!');
+            form.reset();
+            submitButton.disabled = false;
+          })
+          .catch(error => {
+            alert('There was an error submitting your form. Please try again later.');
+            submitButton.disabled = false;
+          });
+        });
+      </script>
+    </html>
+  </DOCTYPE>
+  
